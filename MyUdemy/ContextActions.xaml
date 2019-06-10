@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    Padding="0,20,0,0"
+    x:Class="MyUdemy.ContextActions">
+    <ContentPage.Content>
+        <ListView x:Name="listView" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <!-- Works for ImageCel or CustomView Cells as well -->
+                    <!-- IsDestructive makes it Red -->
+                    <!-- using the '.' in the binding will bind to the whole Object -->
+                    <TextCell Text="{Binding Name}" Detail="{Binding Status}">
+                        <TextCell.ContextActions>
+                            <MenuItem Text="Call" Clicked="Call_Clicked" CommandParameter="{Binding .}"/>
+                            <MenuItem Text="Delete" Clicked="Delete_Clicked" IsDestructive="true"
+                            CommandParameter="{Binding .}"/>
+                        </TextCell.ContextActions>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

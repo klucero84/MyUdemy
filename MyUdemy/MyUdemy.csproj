@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6298F9F6-0EAB-47F8-A087-3D1076DE19B7}</ProjectGuid>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UseMSBuildEngine>true</UseMSBuildEngine>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MyUdemy</RootNamespace>
+    <AssemblyName>MyUdemy</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App.xaml" />
+    <EmbeddedResource Include="MyUdemyPage.xaml" />
+    <EmbeddedResource Include="Exercise1Page.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exercise2Page.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridExercise1Page.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridExercise2Page.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbsolutePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbsoluteLayoutExercise1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbsoluteLayoutExercise2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListViewLecture.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelativeLayoutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelativeLayoutExercise1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContextActions.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImagePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\background.jpg" />
+    <EmbeddedResource Include="ImageExercise.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PullToRefresh.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AirBnBSearchExercise.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyUdemyPage.xaml.cs">
+      <DependentUpon>MyUdemyPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Exercise1Page.xaml.cs">
+      <DependentUpon>Exercise1Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Exercise2Page.xaml.cs">
+      <DependentUpon>Exercise2Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GridExercise1Page.xaml.cs">
+      <DependentUpon>GridExercise1Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GridExercise2Page.xaml.cs">
+      <DependentUpon>GridExercise2Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AbsolutePage.xaml.cs">
+      <DependentUpon>AbsolutePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AbsoluteLayoutExercise1.xaml.cs">
+      <DependentUpon>AbsoluteLayoutExercise1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AbsoluteLayoutExercise2.xaml.cs">
+      <DependentUpon>AbsoluteLayoutExercise2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewLecture.xaml.cs">
+      <DependentUpon>ListViewLecture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeGroup.cs" />
+    <Compile Include="RelativeLayoutPage.xaml.cs">
+      <DependentUpon>RelativeLayoutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RelativeLayoutExercise1.xaml.cs">
+      <DependentUpon>RelativeLayoutExercise1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContextActions.xaml.cs">
+      <DependentUpon>ContextActions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImagePage.xaml.cs">
+      <DependentUpon>ImagePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImageExercise.xaml.cs">
+      <DependentUpon>ImageExercise.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PullToRefresh.xaml.cs">
+      <DependentUpon>PullToRefresh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AirBnBSearchExercise.xaml.cs">
+      <DependentUpon>AirBnBSearchExercise.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchService.cs" />
+    <Compile Include="Search.cs" />
+    <Compile Include="SearchGroup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.231\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.231\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.231\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+</Project>

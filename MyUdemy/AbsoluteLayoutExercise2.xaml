@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="MyUdemy.AbsoluteLayoutExercise2" 
+    Padding="0,20,0,0">
+    <AbsoluteLayout>
+        <Image Source="https://omaroseguera.com/wp-content/uploads/2017/07/omaroseguera9.jpg" 
+        AbsoluteLayout.LayoutBounds="0,0,1,1" 
+        AbsoluteLayout.LayoutFlags="All" 
+        Aspect="AspectFill" />
+        <Label Text="Omar Oseguera" 
+        FontSize="34" 
+        AbsoluteLayout.LayoutBounds="0,0.8,1,1" 
+        AbsoluteLayout.LayoutFlags="All" 
+        HorizontalOptions="Center" 
+        TextColor="#fff" 
+        FontAttributes="Bold" 
+        FontFamily="Bebas Neue" />
+        <BoxView 
+        AbsoluteLayout.LayoutBounds="0,1,1,100" 
+        AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" 
+        Opacity="0.50" BackgroundColor="#000" />
+        <StackLayout Padding="30,30" 
+            AbsoluteLayout.LayoutBounds="0,1,1,100" 
+            AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" 
+            Orientation="Horizontal">
+            <Label FontFamily="Bebas Neue" Text="Photo" 
+            HorizontalOptions="Center" FontAttributes="Bold" 
+            FontSize="15" TextColor="#fff" />
+            <Label FontFamily="Bebas Neue" Text="Software" 
+            HorizontalOptions="CenterAndExpand" 
+            FontAttributes="Bold" 
+            FontSize="15" TextColor="#fff" />
+            <Label FontFamily="Bebas Neue" 
+            Text="Design" 
+            HorizontalOptions="Center" 
+            FontAttributes="Bold" 
+            FontSize="15" TextColor="#fff" />
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>
